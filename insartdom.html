@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Insert DOM</title>
+
+    <style>
+        h2 {
+            color: rgb(207, 22, 22);
+            font-family: "Helvetica Neue", Helvetica;
+            font-weight: 800;
+        }
+        /* .first_el {
+            margin-bottom: 10px;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <section>
+            <div id="first_el">
+                <h2>Lovae Javascript</h2>
+                <article id='first_article'>
+                    <h3>Article-1</h3>
+                    <p class="author">author-1</p>
+                    <p class="Description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, autem possimus blanditiis consequuntur placeat tempora. Nesciunt, praesentium fugit. Laboriosam voluptatibus deserunt a, ullam laborum explicabo blanditiis quos
+                        nisi
+                    </p>
+
+                </article>
+            </div>
+            <div>
+                <article id='second_article'>
+                    <h3>Article-1</h3>
+                    <p class="author">author-1</p>
+                    <p class="Description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, autem possimus blanditiis consequuntur placeat tempora. Nesciunt, praesentium fugit. Laboriosam voluptatibus deserunt a, ullam laborum explicabo blanditiis quos
+                        nisi
+                    </p>
+
+                </article>
+            </div>
+            <article>
+                <h3>Grocery List:</h3>
+                <ul id="gift_item">
+                    <li>gift item</li>
+                    <li>gift item</li>
+                    <li>gift item</li>
+                    <li>gift item</li>
+                    <li>gift item</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+<script>
+    //CSS
+    const divEle = document.getElementById('first_el');
+    divEle.style.marginBottom = "10px";
+
+
+    const cssJs = document.getElementById('first_article');
+    cssJs.style.color = 'green';
+    cssJs.style.backgroundColor = 'LightPink';
+    cssJs.style.padding = '10px';
+    cssJs.style.border = '5px solid black';
+    cssJs.style.fontFamily = 'verdana';
+    cssJs.style.fontStyle = 'italic';
+    cssJs.style.fontSize = '14px';
+    cssJs.style.textAlign = 'center';
+    cssJs.style.bottom = '10px';
+
+    const cssJs1 = document.getElementById('second_article');
+    cssJs1.style.color = 'green';
+    cssJs1.style.backgroundColor = 'LightPink';
+    cssJs1.style.padding = '10px';
+    cssJs1.style.border = '5px solid DeepPink';
+    cssJs1.style.fontFamily = 'verdana';
+    cssJs1.style.fontStyle = 'italic';
+    cssJs1.style.fontSize = '14px';
+    cssJs1.style.textAlign = 'center';
+    // cssJs.style.border '
+
+    //Add new Paragraph:
+    const article = document.getElementById('first_article');
+    const newParagraph = document.createElement('p');
+    newParagraph.innerHTML = 'This is added Javascript';
+    article.appendChild(newParagraph);
+
+    //New List item added:
+    const addul = document.getElementById('gift_item');
+    const addli = document.createElement('li');
+    addli.innerHTML = 'New Gift Item';
+    addul.appendChild(addli);
+    const addul1 = document.getElementById('gift_item');
+    const addli1 = document.createElement('li');
+    const addli2 = document.createElement('li');
+    const addli3 = document.createElement('li');
+    const addli4 = document.createElement('li');
+    addli1.innerHTML = 'haneyBani';
+    addli2.innerHTML = 'Sari';
+    addli3.innerHTML = 'ThreePics';
+    addli4.innerHTML = 'T-Shart';
+    addul1.appendChild(addli1);
+    addul1.appendChild(addli2);
+    addul1.appendChild(addli3);
+    addul1.appendChild(addli4);
+    //Add new Paragraph:
+    const newartical = document.getElementById('second_article');
+    const newparagrap1 = document.createElement('p');
+    const newparagrap2 = document.createElement('p');
+    newparagrap1.innerHTML = 'S M Zahurul Islam By added Javascript';
+    newparagrap2.innerHTML = 'My Bangla of gold i love you';
+    newartical.appendChild(newparagrap1);
+    newartical.appendChild(newparagrap2);
+</script>
+
+</html>

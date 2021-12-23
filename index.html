@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <script src="script.js"></script>
+    <title>DOM-Basic</title>
+    <style>
+        article {
+            margin: 5px;
+            /* padding: auto; */
+            font-size: 18px;
+            border: 2px solid rgba(233, 11, 11, 0.89);
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <h2>Javascript-DOM</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae hic incidunt inventore blanditiis a? Ipsam aliquid suscipit quidem assumenda nisi quo. Iure possimus aspernatur delectus, id et dicta est error doloribus suscipit repellat
+                    hic iste explicabo, omnis fugiat saepe, atque nam. Enim vitae tenetur fuga in error. Ab, itaque ex.</p>
+                <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, nobis?</p>
+            </div>
+            <article>
+                <h3>Article-1</h3>
+                <p class="author">author-1</p>
+                <p class="Description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, autem possimus blanditiis consequuntur placeat tempora. Nesciunt, praesentium fugit. Laboriosam voluptatibus deserunt a, ullam laborum explicabo blanditiis quos nisi
+                    ducimus voluptatum.</p>
+            </article>
+            <article>
+                <h3>Article-2</h3>
+                <p class="author">author-2</p>
+                <p class="Description">Officiis fugiat obcaecati nisi hic vel atque totam optio, ipsum similique laudantium! Amet rerum veritatis aliquam laudantium ea, sapiente voluptatem mollitia consequuntur. Quae debitis quia illo placeat voluptatum laboriosam similique.</p>
+            </article>
+            <article>
+                <h3>Article-3</h3>
+                <p class="author">author-3</p>
+                <p class="Description">Ipsum, voluptate facilis, tempore nemo facere iure eos tenetur rem consequatur assumenda delectus dolorum. Rem sint perferendis, totam quos blanditiis distinctio et, quia debitis eum eos recusandae? Consequuntur, voluptatum incidunt.</p>
+            </article>
+
+        </section>
+    </main>
+
+    <script>
+        // Article Css By Javascript File:
+        var authors = document.getElementsByClassName('author');
+        for (var i = 0; i < authors.length; i++) {
+            var element = authors[i];
+            element.innerHTML = 'Lekhok' + (i + 1);
+            // element.style.display = 'none';
+            element.style.backgroundColor = '#9C114B';
+            element.style.margin = '10px';
+            element.style.padding = '10px';
+            element.style.fontSize = '20px';
+            element.style.fontFamily = 'The times New Roman';
+            element.style.fontWeight = '600';
+            element.style.color = '#4B9C11';
+            // console.log(element);
+        }
+        // Css By Javascript File:
+        var first = document.getElementById("first");
+        first.style.color = '#FFBD33';
+        first.style.fontFamily = 'Fira Code';
+        first.style.fontSize = '20px';
+        first.style.backgroundColor = 'green';
+        first.style.margin = '10px';
+        first.style.padding = '10px';
+        // console.log(document.body);
+        // alert('Iam Learning Javascript')
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorer Event</title>
+</head>
+
+<body>
+    <h2 onclick="alert('I Love-Programming')">Javascript-Event</h2>
+    <button id="firstBta">Click-Me1</button>
+    <button id="secondBta">Click-Me2</button>
+    <button id="thirdBta">Click-Me3</button>
+    <button id="fourthBta">Click-Me4</button>
+</body>
+<script>
+    const fourth_bta = document
+        .getElementById("fourthBta")
+        .addEventListener("click", function() {
+            document.body.style.color = "green";
+        });
+    const one_btn = document
+        .getElementById("firstBta")
+        .addEventListener("click", function() {
+            document.body.style.color = "tomato";
+        });
+
+    // function handleClick() {
+    //     document.body.style.backgroundColor = "tomato";
+    // }
+    // const first_batton = document.getElementById("firstBta");
+    // first_batton.addEventListener("click", handleClick);
+    // first_batton.onclick = handleClick;
+</script>
+
+</html>
